@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike for Rent</title>
+</head>
+<body style="background-color: black;">
+    <center>
+        <h1 style="color: orange;"> TAKE A RIDE </h1>
+        <table>
+        <form method="POST">
+            {% csrf_token %}
+
+            <label for="bn" style="color: cyan;">Bike Name</label>
+            <input type="text" name="bn" id="bn"> <br> <br>
+
+
+            <label for="cn" style="color: cyan;">Customer Name</label>
+            <input type="text" name="cn" id="cn"> <br> <br>
+
+
+            <label for="rp" style="color: cyan;">Rent Price</label>
+            <input type="number" name="rp" id="rp"> <br> <br>
+
+             <input type="Submit" style="color: orange;">
+            
+
+        </form>
+        </table>
+    </center>
+</body>
+</html>
